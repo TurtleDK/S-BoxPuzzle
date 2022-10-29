@@ -1,0 +1,43 @@
+{
+  "Title": "Funnystuff",
+  "Type": "game",
+  "Org": "ngi",
+  "Ident": "funnystuff",
+  "Tags": "",
+  "Schema": 1,
+  "HasAssets": true,
+  "AssetsPath": "",
+  "ResourcePaths": [],
+  "HasCode": true,
+  "CodePath": "/code/",
+  "RootNamespace": null,
+  "Metadata": {
+    "MaxPlayers": 64,
+    "MinPlayers": 1,
+    "GameNetworkType": "Multiplayer",
+    "MapSelect": "Official",
+    "MapList": [
+      "testingmap.vmap"
+    ],
+    "RankType": "None",
+    "PerMapRanking": false,
+    "LeaderboardType": "None",
+    "ProjectTemplate": null,
+    "ParentPackage": "",
+    "GameCategory": "None",
+    "DefaultLeaderboards": [],
+    "ControlModes": {
+      "Keyboard": true
+    },
+    "PackageSettings": [
+      {
+        "Choices": [],
+        "ConVarName": "Testing",
+        "DisplayName": "Testing",
+        "DefaultValue": "",
+        "Description": "",
+        "Group": ""
+      }
+    ]
+  }
+}
