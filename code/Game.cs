@@ -19,6 +19,7 @@ namespace Sandbox;
 /// </summary>
 public partial class MyGame : Sandbox.Game
 {
+
 	public MyGame()
 	{
 	}
@@ -34,21 +35,16 @@ public partial class MyGame : Sandbox.Game
 		var player = new MyPlayer();
 		client.Pawn = player;
 		
-		/*// Get all of the spawnpoints
-		var spawnpoints = Entity.All.OfType<SpawnPoint>();
-
-		// chose a random one
-		var randomSpawnPoint = spawnpoints.OrderBy( x => Guid.NewGuid() ).FirstOrDefault();
-		
-		// if it exists, place the pawn there
-		if ( randomSpawnPoint != null )
-		{
-			var tx = randomSpawnPoint.Transform;
-			tx.Position = tx.Position + Vector3.Up * 50.0f; // raise it up
-			player.Transform = tx;
-		}
-		*/
-		
 		player.Respawn();
+		
+	}
+
+	[ConCmd.Server("KillEveryone")]
+	public static void KillEveryone()
+	{
+		foreach ( Player plr in All.OfType<Player>() )
+		{
+			plr.TakeDamage( DamageInfo.Generic( 100f ) );
+		}
 	}
 }
