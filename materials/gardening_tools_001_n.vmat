@@ -1,0 +1,11 @@
+
+Layer0
+{
+	shader "complex.vfx"
+
+	TextureColor "materials/gardening_tools_001_n.tga"
+	TextureAmbientOcclusion "materials/gardening_tools_001_ao.tga"
+	TextureNormal "materials/default/default_normal.tga"
+	TextureRoughness "materials/default/default_rough.tga"
+
+}
